@@ -9,7 +9,7 @@ getTodos: (): TodoTypes[] => {
 },
 
 addTodos: (text:string): TodoTypes => {
-   const todos = TodoService.getTodos();
+const todos = TodoService.getTodos();
 const newTodo: TodoTypes = {id: todos.length + 1, text, completed: false};
 
 
@@ -28,10 +28,9 @@ return todo;
 },
 
 deleteTodo: (id:number): void => {
-   const todos = TodoService.getTodos();
+const todos = TodoService.getTodos();
 
-
-   const updateTodos = todos.filter((todo) => todo.id !== id);
+const updateTodos = todos.filter((todo) => todo.id !== id);
    localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(updateTodos));
 }
 };

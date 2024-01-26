@@ -1,4 +1,3 @@
-// TodoForm.tsx
 import React, { Dispatch, SetStateAction, useState } from "react";
 import { TodoService } from "../models/TodoService";
 import { TodoTypes } from "../models/TodoTypes";
@@ -25,8 +24,7 @@ export const TodoForm: React.FC<PropTypes> = ({ setTodos }) => {
         value={newTodoText}
         onChange={(e) => setNewTodoText(e.target.value)}
         autoFocus={true}
-        placeholder="Add a new task"
-      />
+        placeholder="Add a new task"/>
       <button onClick={handleAddTodo}>Add</button>
       <h1>To do list</h1>
     </div>

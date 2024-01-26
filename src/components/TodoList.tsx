@@ -1,4 +1,3 @@
-// TodoList.tsx
 import { useState } from "react";
 import { TodoTypes } from "../models/TodoTypes";
 import { TodoService } from "../models/TodoService";
@@ -54,24 +53,27 @@ export const TodoList = () => {
                     type="text"
                     value={editedTodoText}
                     onChange={(e) => setEditedTodoText(e.target.value)}
-                    autoFocus={true}
-                  />
-                  <button className="save-Btn" onClick={() => handleEditSave(todo.id)}>
+                    autoFocus={true} />
+                  <button className="save-Btn" 
+                  onClick={() => handleEditSave(todo.id)}>
                     Save
                   </button>
-                  <button className="cancel-Btn" onClick={() => handleEditCancel()}>
+                  <button className="cancel-Btn" 
+                  onClick={() => handleEditCancel()}>
                     Cancel
                   </button>
                 </div>
               ) : (
                 <div>
                   <span>{todo.text}</span>
-                  <button className="edit-Btn" onClick={() => handleEditStart(todo.id, todo.text)}>
+                  <button className="edit-Btn" 
+                  onClick={() => handleEditStart(todo.id, todo.text)}>
                     Edit
                   </button>
                 </div>
               )}
-              <button className="delete-Btn" onClick={() => handleDeleteTodo(todo.id)}>
+              <button className="delete-Btn" 
+              onClick={() => handleDeleteTodo(todo.id)}>
                 Delete
               </button>
             </li>
