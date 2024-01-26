@@ -1,0 +1,110 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Bebas+Neue;
+}
+
+h1 {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #103357;
+}
+
+.app {
+background: linear-gradient(#e66465, #9198e5);
+padding-top: 10px;
+padding-bottom: 100px;
+width: 50%;
+margin-top: 60px;
+margin-left: auto;
+margin-right: auto;
+border-radius: 80px;
+border: #e66465 solid 2px;
+
+}
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+  input {
+      height: 35px;
+      width: 70%;
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid black;
+      margin-left: 10px;
+      margin-top: 40px;
+      box-shadow: inset 0 0 5px black;
+  }
+
+button {
+  border-radius: 8px;
+  border: 1px solid;
+  margin: 0.5em;
+  padding: 0.2em 0.5em;
+  font-weight: 100;
+  cursor: pointer;
+  transition: 0.30s;
+  background-color: rgb(227, 195, 244);
+}
+
+
+.edit-Btn:hover:hover{
+  background-color: #e66465;
+}
+
+.save-Btn:hover:hover {
+  background-color: #88a789;
+}
+
+.delete-Btn:hover, .cancel-Btn:hover{
+  background-color: rgb(157, 33, 33);
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+
+.add-Btn {
+  align-items: center;
+  width: 95px;
+  height: 50px;
+  margin: 12px;
+  margin-top: 15px;
+  border-radius: 50px;
+  border: none;
+  font-size: 15px;
+  background-color: #e66465;
+  color: white;
+  transition: 0.2s all;
+  box-shadow: 0 0 10px black;
+}
+
+.items > span {
+  text-align: center;
+  flex: 1; 
+  padding: 0 10px;
+}
+
+.editBtn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+}
+
+li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px; 
+  border-bottom: 1px solid #ddd;
+  list-style-type: circle;
+}
