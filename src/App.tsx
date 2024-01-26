@@ -5,7 +5,9 @@ function App() {
 
   return (
     <>
-   <TodoList />
+    <div className='app'>
+      <TodoList />
+      </div>
     </>
   )
 }
